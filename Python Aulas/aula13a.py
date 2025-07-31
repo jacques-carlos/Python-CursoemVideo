@@ -3,12 +3,12 @@
 AULA 13 parte A
 **************************************************
 
-        LAÇO DE VARIÁVEL DE CONTROLE
+        ESTRUTURA DE REPETIÇÃO COM VARIÁVEL DE CONTROLE
         ESTRUTURA DE REPETIÇÃO FOR
 
         for c in range(1,10):
-            passo
-        pega
+            print x
+        print('FIM')
 
 """
 
