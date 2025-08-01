@@ -3,13 +3,13 @@
     Melhore o DESAFIO 61, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerra quando ele disser que quer mostrar 0 termos.    
 
     [Exercício 61]
-        Refaça o DESAFIO 51, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura While.
+        Refaça o DESAFIO 51, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da Progressão usando a estrutura While.
     
         [Exercício 51]
-            Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
+            Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa Progressão.
 
         Neste versão do exercício 62 decidi fazer uma pequena alteração: perguntar ao usuário se ele deseja acrescentar mais termos na PA, em seguida perguntar a quantidade de 
-    termos e por fim mostrar a progressão aritmética inteira.
+    termos e por fim mostrar a Progressão Aritmética inteira.
     
 """
 
@@ -23,11 +23,11 @@ while contador < 10:
     print(primeirotermo, end=' -> ')
     primeirotermo = primeirotermo + razao
     contador += 1
-print('Fim da progressão aritmética.')
+print('Fim da Progressão Aritmética.')
 
 contador = 0
 
-continuar = str(input('Deseja que eu mostre mais alguns termos? [S/N] ')).upper()
+continuar = str(input('Deseja que eu mostre mais alguns termos? [S/N] ')).upper().strip()
 if continuar == 'N':
      print('Certo, volte sempre que desejar!')
 elif continuar == 'S':
@@ -37,7 +37,7 @@ elif continuar == 'S':
             print(termo, end=' -> ')
             termo = termo + razao
             contador += 1
-        print('Fim da progressão aritmética.')
+        print('Fim da Progressão Aritmética.')
     else:
         print('ERRO! Selecione uma quantidade válida.')
 else:

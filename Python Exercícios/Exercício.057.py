@@ -8,7 +8,7 @@ sexo = ''
 print('Seu sexo é masculino ou feminino?')
 
 while sexo != 'M' and sexo != 'F':
-    sexo = str(input('Digite seu sexo [M/F]: ')).upper()
+    sexo = str(input('Digite seu sexo [M/F]: ')).upper().strip()
     if sexo != 'M' and sexo != 'F':
         print('Opção inválida, tente novamente.')
 
