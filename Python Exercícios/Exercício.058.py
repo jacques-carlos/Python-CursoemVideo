@@ -12,6 +12,7 @@ from random import randint
 computador = randint(0,10)
 usuario = 11
 tentativas = 0
+print('Você é bom em adivinhação?')
 
 while computador != usuario:
     print('Estou pensando em um número entre 0 e 10... Tente adivinhar!')
