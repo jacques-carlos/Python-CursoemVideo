@@ -7,7 +7,7 @@
 import pygame
 
 pygame.init()
-pygame.mixer.music.load('music-from-python.mp3')
+pygame.mixer.music.load('grateful-neffex.mp3')
 pygame.mixer.music.play()
 input()
 pygame.event.wait()
