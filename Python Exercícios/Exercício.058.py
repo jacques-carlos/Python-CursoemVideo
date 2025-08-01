@@ -17,7 +17,7 @@ print('Você é bom em adivinhação?')
 while computador != usuario:
     print('Estou pensando em um número entre 0 e 10... Tente adivinhar!')
     usuario = int(input('Digite seu palpite: '))
-    if usuario > 10:
+    if usuario > 10 or usuario <0:
         print('Por favor, informe um número válido.')
     else:
         tentativas += 1
