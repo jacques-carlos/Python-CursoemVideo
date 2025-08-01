@@ -4,15 +4,10 @@
 
 """
 
-sexo = ''
-print('Seu sexo é masculino ou feminino?')
+sexo = str(input('Por favor, digite o seu sexo [M/F]: ')).upper().strip()[0]
 
-while sexo != 'M' and sexo != 'F':
-    sexo = str(input('Digite seu sexo [M/F]: ')).upper().strip()
-    if sexo != 'M' and sexo != 'F':
-        print('Opção inválida, tente novamente.')
-
-if sexo == 'M':
-    print('Seu sexo é masculino.')
-elif sexo == 'F':
-    print('Seu sexo é feminino.')
+while sexo not in 'MF':
+    print('Opção inválida, tente novamente.')
+    sexo = str(input('Por favor, digite o seu sexo [M/F]: ')).upper().strip()[0]
+    
+print(f'Sexo {sexo} registrado com sucesso')

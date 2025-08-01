@@ -8,19 +8,22 @@
 
 """
 from random import randint
-
-computador = randint(0,10)
-usuario = 11
-tentativas = 0
 print('Você é bom em adivinhação?')
+print('Estou pensando em um número entre 0 e 10... Tente adivinhar!')
+computador = randint(0,10)
+usuario = int(input('Digite seu palpite: '))
+tentativas = 1
 
-while computador != usuario:
-    print('Estou pensando em um número entre 0 e 10... Tente adivinhar!')
-    usuario = int(input('Digite seu palpite: '))
+while computador != usuario:   
     if usuario > 10 or usuario <0:
         print('Por favor, informe um número válido.')
     else:
+        if computador > usuario:
+            dica = 'Mais...'
+        elif computador < usuario:
+            dica = 'Menos...'
+        print(dica)
         tentativas += 1
-        if computador != usuario:
-            print('Que pena, você errou!')
-print(f'Parabéns, você acertou! Você precisou de {tentativas} tentativa(s).')
+    usuario = int(input('Tente outra vez: '))
+
+print(f'Parabéns, acertou! Você precisou de {tentativas} tentativa(s).')
