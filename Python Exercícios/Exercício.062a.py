@@ -14,21 +14,21 @@ print('Calculadora de Progressão Aritmética.')
 termo = int(input('Informe seu primeiro termo da PA: '))
 razao = int(input('Informe a razão da PA: '))
 contador = 0
+resposta = 1
 
-while contador < 10:
-    print(termo, end=' -> ')
-    termo = termo + razao
-    contador += 1
-print('Fim da progressão aritmética.')
-
-continuar = int(input('Infome quantos termos a mais você quer que eu mostre: '))
-if continuar == 0:
-    print('Tudo bem, encerrando o programa...')
-elif continuar > 0:
-    while contador < continuar + 10:
+while resposta != 0:
+    while contador < 10:
         print(termo, end=' -> ')
         termo = termo + razao
         contador += 1
-    print('Fim da progressão aritmética.')
-else:
-    print('ERRO! Digite uma quantidade válida.')
+    continuar = int(input('Mostrar mais quantos termos? '))
+    if continuar >= 0:
+        resposta = continuar
+        while continuar > 0:
+            print(termo, end=' -> ')
+            termo = termo + razao
+            continuar = continuar - 1     
+    else:
+        print('ERRO!')
+
+print('Fim da progressão aritmética.')

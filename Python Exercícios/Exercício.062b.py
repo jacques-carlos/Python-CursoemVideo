@@ -8,7 +8,8 @@
         [Exercício 51]
             Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
 
-    Neste versão do exercício 62 decidi fazer uma pequena alteração: perguntar ao usuário se ele deseja acrescentar mais termos na PA, depois perguntar a quantidade.
+        Neste versão do exercício 62 decidi fazer uma pequena alteração: perguntar ao usuário se ele deseja acrescentar mais termos na PA, em seguida perguntar a quantidade de 
+    termos e por fim mostrar a progressão aritmética inteira.
     
 """
 
