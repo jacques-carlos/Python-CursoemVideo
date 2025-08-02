@@ -13,16 +13,19 @@
 from time import sleep as delay
 menu = 0
 
-while menu != 5:
-    print('''
-------------------MENU MATEMÁTICO------------------
+print('''
+==================== MENU MATEMÁTICO ====================
 Primeiramente, informe dois valores:
 ''')
-    n1 = int(input('Primeiro valor: '))
-    n2 = int(input('Segundo valor: '))    
-    
-    print('''
-------------------MENU MATEMÁTICO------------------
+n1 = int(input('Primeiro valor: '))
+n2 = int(input('Segundo valor: '))    
+
+while menu != 5: 
+    print(f'''
+==================== MENU MATEMÁTICO ====================
+PRIMEIRO: {n1}
+SEGUNDO: {n2}
+
 Selecione uma das seguintes opções:
     [1] Soma
     [2] Multiplicador
@@ -31,22 +34,43 @@ Selecione uma das seguintes opções:
     [5] Sair do programa
 ''')
     
-    menu = (int(input('Me infome o que você quer fazer: ')))
+    menu = (int(input('Me infome o que você quer fazer >>>>>>>>> ')))
+    
     if menu == 1:
         soma = n1 + n2
-        print(f'Sua soma é: {soma}')
+        print(f'O resultado de {n1} + {n2} é: {soma}')
+        print('')
+        print('Voltando ao Menu Inicial...')
+        delay(2)
+    
     elif menu == 2:
         multiplicação = n1 * n2
-        print(f'Sua multiplicação é: {multiplicação}')
+        print(f'O resultado de {n1} x {n2} é: {multiplicação}')
+        print('')
+        print('Voltando ao Menu Inicial...')
+        delay(2)
+    
     elif menu == 3:
         maior = max(n1, n2)
-        print(f'O maior número é: {maior}')
+        print(f'O maior número entre {n1} e {n2} é: {maior}')
+        print('')
+        print('Voltando ao Menu Inicial...')
+        delay(2)
+    
     elif menu == 4:
         print('Aguarde um instante...')
         delay(2)
+        print('''
+==================== MENU MATEMÁTICO ====================
+Informe dois valores:
+''')
+        n1 = int(input('Primeiro valor: '))
+        n2 = int(input('Segundo valor: '))    
+    
     elif menu == 5:
         print('Encerrando o programa...')
         delay(3)
+    
     else:
         print('ERRO!\nOpção inválida, tente novamente.')
         delay(2)

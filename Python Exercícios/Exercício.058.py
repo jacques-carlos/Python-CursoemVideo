@@ -18,9 +18,9 @@ while computador != usuario:
     if usuario > 10 or usuario <0:
         print('Por favor, informe um número válido.')
     else:
-        if computador > usuario:
+        if usuario < computador:
             dica = 'Mais...'
-        elif computador < usuario:
+        elif usuario > computador:
             dica = 'Menos...'
         print(dica)
         tentativas += 1
