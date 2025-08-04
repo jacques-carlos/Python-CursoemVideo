@@ -9,26 +9,27 @@
             Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa Progressão.
     
 """
-
 print('Calculadora de Progressão Aritmética.')
 termo = int(input('Informe seu primeiro termo da PA: '))
 razao = int(input('Informe a razão da PA: '))
 contador = 0
-resposta = 1
+mais = 1
 
-while resposta != 0:
+while mais != 0:
     while contador < 10:
         print(termo, end=' -> ')
-        termo = termo + razao
+        termo += razao
         contador += 1
+    print('PAUSA')
     continuar = int(input('Mostrar mais quantos termos? '))
     if continuar >= 0:
-        resposta = continuar
+        mais = continuar
         while continuar > 0:
             print(termo, end=' -> ')
-            termo = termo + razao
-            continuar = continuar - 1     
+            termo += razao
+            continuar -= 1
+            contador += 1
     else:
         print('ERRO!')
 
-print('Fim da Progressão Aritmética.')
+print(f'Fim da Progressão Aritmética com {contador} termos.')
