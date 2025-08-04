@@ -1,7 +1,8 @@
 """
 [Exercício 63]
     Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros elementos de uma Sequência de Fibonacci.
-    
+    Minha versão onde a sequência começa com o número n ao invés de 0.
+
 """
 
 print('Sequência de Fibonacci')
@@ -11,20 +12,16 @@ n2 = n
 n3 = n1 + n2
 contador = 0
 
-while contador < n:
-    
+while contador < n:   
     if contador < n:
         contador += 1
-        print(n1, end=' -> ')
-    
+        print(n1, end=' -> ')  
     if contador < n:
         contador += 1
-        print(n2, end=' -> ')
-    
+        print(n2, end=' -> ')    
     if contador < n:
         contador += 1
-        print(n3, end=' -> ')
-       
+        print(n3, end=' -> ')       
     n1 = n2 + n3
     n2 = n1 + n3
     n3 = n1 + n2
