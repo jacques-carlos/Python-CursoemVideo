@@ -9,7 +9,6 @@
     Seu programa deverá realizar a operação solicitada em cada caso.
 
 """
-
 from time import sleep as delay
 menu = 0
 

@@ -4,12 +4,17 @@
     FOR
     
 """
-
 print('Programa que mostra o fatorial de um número.')
-numero = int(input('Digite um número: '))
-antecessor = numero - 1
-resultado = numero * antecessor
-for x in range (2, numero):
-    antecessor = antecessor - 1
-    resultado = resultado * antecessor
-print(f'O resultado de {numero}! é: {resultado}')
+n = int(input('Digite um número: '))    # número
+f = 1                                   # fator de multiplicação
+print(f'Calculando {n}! =', end=' ')
+for c in range (n, 0, -1):
+    if n != 1: # o número 1 não precisa dessa parte
+        print (c, end=' ')
+        print('x' if c > 1 else '=', end=' ')
+    f *= c
+# condição para filtrar números negativos
+if n >= 0:
+    print(f)
+else:
+    print('Número inválido.')
