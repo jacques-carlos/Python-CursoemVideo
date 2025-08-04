@@ -4,45 +4,36 @@
 O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
     
 """
-
 continuar = 'S'
-contador = 0
-soma = 0
-media = 0
-maior = 0
-menor = 0
+contador = soma = media = maior = menor = 0 
 
 print('')
 print('='*130)
 print('Esse programa irá ler números inteiros digitados pelo teclado e no final mostrará a média, o maior e o menor dos valores lidos.')
 
 while continuar == 'S':
-    print('')
-    pergunta = str(input('Você deseja continuar?[S/N]: ')).upper().strip()
-    
-    if pergunta == 'S':
-        continuar = 'S'
-        numero = int(input('Digite seu número: \n'))
-        soma += numero 
-        if contador == 0:
-            menor = numero
+    numero = int(input('Digite seu número: \n'))
+    contador += 1
+    soma += numero 
+    if contador == 1:
+        maior = menor = numero
+    else:
+        if numero > maior:
             maior = numero
-        else:
-            if numero > maior:
-                maior = numero
-            if numero < menor:
-                menor = numero
-        contador += 1
-    
-    elif pergunta == 'N':
+        if numero < menor:
+            menor = numero
+        
+    pergunta = str(input('Você deseja continuar?[S/N]: ')).upper().strip()[0]
+    if pergunta == 'N':
         continuar = 'N'
-        print('Finalizando programa...')
-    
+        print('Finalizando programa...')   
+    elif pergunta == 'S':
+        print('')
     else:
         print('ERRO! Digite "S" para SIM e "N" para NÃO')
+        break
     
-if contador != 0:
-    media = soma/contador
+media = soma/contador
 
 print(f'''
 Média: {media}

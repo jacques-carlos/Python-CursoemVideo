@@ -5,13 +5,10 @@ No final mostre quantos números foram digitados e qual foi a soma entre eles.
     (Desconsiderando o flag).
     
 """
-
-c = 0
-x = 0
-soma = 0
+c = x = soma = 0       # c = contador # x = código para sair
 
 while x != 999:
-    x = int(input('Digite um número inteiro para a soma: '))
+    x = int(input('Digite [999] para sair do programa | Digite um número qualquer para somar >>>>>> '))
     if x != 999:
         c += 1
         soma += x
