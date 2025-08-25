@@ -1,6 +1,9 @@
 """
 [Exercício 65]
-    Crie um programa que leia vários números inteiros pelo teclado. No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor dos valores lidos.
-O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+    Crie um programa que leia a idade e o sexo de várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário queer ou não continuar. No final, mostre:
+
+    A) Quantas pessoas tem mais de 18 anos.
+    B) Quantos homens foram cadastrados.
+    C) Quantas mulheres tem menos de 20 anos.
     
 """
