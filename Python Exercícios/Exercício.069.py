@@ -1,5 +1,5 @@
 """
-[Exercício 65]
+[Exercício 69]
     Crie um programa que leia a idade e o sexo de várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário queer ou não continuar. No final, mostre:
 
     A) Quantas pessoas tem mais de 18 anos.
