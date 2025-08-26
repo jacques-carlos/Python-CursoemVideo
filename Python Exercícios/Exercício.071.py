@@ -8,7 +8,7 @@ OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
 valor = notas_cinquenta = notas_vinte = notas_dez = notas_um = 0
 
 print('='*50)
-print('BANCO MP')
+print(f'{'BANCO MP':^50}')
 print('='*50)
 
 while True:
@@ -26,7 +26,31 @@ while True:
         valor = valor - 1
         notas_um += 1
     break
-print(f'{notas_cinquenta} nota(s) de R$50,00')
-print(f'{notas_vinte} nota(s) de R$20,00')
-print(f'{notas_dez} nota(s) de R$10,00')
-print(f'{notas_um} nota(s) de R$1,00')
+
+print('='*50)
+
+if notas_cinquenta > 0:
+    if notas_cinquenta == 1:
+        print(f'{notas_cinquenta} nota de R$50')
+    else:
+        print(f'{notas_cinquenta} notas de R$50')
+
+if notas_vinte > 0:
+    if notas_vinte == 1:
+        print(f'{notas_vinte} nota de R$20')
+    else:
+        print(f'{notas_vinte} notas de R$20')
+
+if notas_dez > 0:
+    if notas_dez == 1:
+        print(f'{notas_dez} nota de R$10')
+    else:
+        print(f'{notas_dez} notas de R$10')
+
+if notas_um > 0:
+    if notas_um == 1:
+        print(f'{notas_um} nota de R$1')
+    else:
+        print(f'{notas_um} notas de R$1')
+        
+print('='*50)

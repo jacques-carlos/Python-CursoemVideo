@@ -12,10 +12,9 @@ contadorv = 0
 while True:
     print('')
     print(f'******************** ROUND {contadorj} ********************')
-    escolha = str(input('PAR ou ÍMPAR? ')).upper().strip()[0]
-    if escolha not in 'PIÍ':
-        print('ERRO! Digite uma opção válida!')
-        break
+    escolha = ' '
+    while escolha not in 'PIÍ':
+        escolha = str(input('PAR ou ÍMPAR? ')).upper().strip()[0]
     computador = randint(0,10)
     jogador = int(input('Seus dedos: '))
     print(' ')

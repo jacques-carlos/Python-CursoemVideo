@@ -4,8 +4,7 @@
 e qual foi a soma entre eles (desconsiderando a flag).
     
 """
-
-numero = soma = contador = 0
+soma = contador = 0
 print('Digite "999" para parar!')
 while True:
     numero=(int(input('Digite um número: ')))
@@ -13,4 +12,4 @@ while True:
         break
     soma += numero
     contador += 1
-print(f'Você digitou {contador} números e a soma deles é {soma}')
+print(f'Você digitou {contador} números e a soma deles é {soma}!')

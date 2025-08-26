@@ -10,16 +10,16 @@ total = produtos_caros = preço_mais_barato = 0
 nome_mais_barato = ''
 
 print('-'*50)
-print('LOJA MERCADO PRESO')
+print(f'{' LOJA MERCADO PRESO ':=^50}')
 print('-'*50)
 
 while True:
     continuar = 'a definir'
     print('')
     produto = (str(input('Produto: ')))
-    preço = float(input('Preço: '))
+    preço = float(input('Preço: R$'))
 
-    if total == 0:
+    if total == 0 or preço < preço_mais_barato:
         nome_mais_barato = produto
         preço_mais_barato = preço
 
@@ -27,9 +27,6 @@ while True:
     
     if preço > 1000:
         produtos_caros += 1
-    if preço < preço_mais_barato:
-       nome_mais_barato = produto
-       preço_mais_barato = preço
 
     while continuar not in 'SN':
         continuar = str(input('Deseja continuar?[S/N]: ')).strip().upper()[0]
