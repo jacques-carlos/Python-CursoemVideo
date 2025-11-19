@@ -1,3 +1,12 @@
+"""
+**************************************************
+AULA 15
+**************************************************
+
+        ESTRUTURA DE REPETIÇÃO WHILE TRUE + BREAK
+
+"""
+
 n = soma = 0
 while True:
     n=int(input('Digite um número: '))
