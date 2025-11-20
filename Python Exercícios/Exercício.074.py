@@ -7,13 +7,16 @@
 
 from random import randint
 
-n1 = randint(0, 1000)
-n2 = randint(0, 1000)
-n3 = randint(0, 1000)
-n4 = randint(0, 1000)
-n5 = randint(0, 1000)
+tupla = (randint(1, 9), randint(1, 9), randint(
+    1, 9), randint(1, 9), randint(1, 9))
 
-tupla = (n1, n2, n3, n4, n5)
-print(f'A tupla criada foi: {tupla}')
-print(f'O maior número é: {sorted(tupla)[-1]}')
-print(f'O menor número é: {sorted(tupla)[0]}')
+print('Os valores sortados foram:', end=' ')
+for n in tupla:
+    print(n, end=' ')
+
+# print(f'O maior número foi: {sorted(tupla)[-1]}')
+# print(f'O menor número foi: {sorted(tupla)[0]}')
+
+print(f'\nO maior número foi: {max(tupla)}')
+
+print(f'O maior número foi: {min(tupla)}')

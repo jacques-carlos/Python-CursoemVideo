@@ -12,7 +12,11 @@
 tabela = ('Atlético-MG', 'Flamengo', 'Corinthians', 'Palmeiras', 'Fluminense', 'América-MG', 'São Paulo', 'Grêmio', 'Vasco',
           'Internacional', 'Botafogo', 'Sport', 'Cruzeiro', 'Vitória', 'Santos', 'Chapecoense', 'Athletico-PR', 'Bahia', 'Ceará', 'Paraná')
 
+print('=-'*50)
 print('CAMPEONATO BRASILEIRO DE FUTEBOL')
+print('=-'*50)
+for time in tabela:
+    print(time)
 print('=-'*50)
 print(f'Os 5 primeiros colocados são : {tabela[0:5]}')
 print('=-'*50)
