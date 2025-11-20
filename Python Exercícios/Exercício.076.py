@@ -38,7 +38,7 @@ print(f'{'R$':.>60}', end='')
 print(f'{tupla[11]:0.2f}')
 
 print (tupla[12], end='')
-print(f'{'R$':.>60}', end='')
+print(f'{'R$':.>60)}', end='')
 print(f'{tupla[13]:0.2f}')
 
 print('-'*70)
