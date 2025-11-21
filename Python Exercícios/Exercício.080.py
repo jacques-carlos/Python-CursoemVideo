@@ -8,19 +8,19 @@ lista = []
 
 cont = pos = 0
 
-for cont in range (0,5):
+for cont in range(0, 5):
     pos = 0
-    numero = (int(input('Digite um valor: ')))  
-    
+    numero = (int(input('Digite um valor: ')))
+
     if cont == 0:
         lista.insert(0, numero)
         print(f'Primeiro valor adicionado na lista...')
     else:
         while True:
             if pos == len(lista):
-                    lista.append(numero)
-                    print('Valor adicionado na posição final da lista...')
-                    break
+                lista.append(numero)
+                print('Valor adicionado na posição final da lista...')
+                break
             else:
                 if numero < lista[pos]:
                     lista.insert(pos, numero)
@@ -30,5 +30,5 @@ for cont in range (0,5):
                     pos += 1
 
 print('=-'*30)
-print('Os valores digitados em ordem foram:')                
+print('Os valores digitados em ordem foram:')
 print(lista)
