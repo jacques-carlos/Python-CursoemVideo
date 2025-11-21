@@ -15,6 +15,7 @@ AULA 17
 num = [5, 7, 2, 3]
 valores = list[5, 9, 4]
 lista = list(range(4, 11))
+outra = list()
 
 
 print(f'RANGE: {lista}')

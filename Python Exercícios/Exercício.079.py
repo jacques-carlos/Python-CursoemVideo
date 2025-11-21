@@ -5,7 +5,7 @@
     No final, serão exibidos todos os valores únicos digitados, em ordem crescente. 
 """
 
-lista = []
+lista = list()
 
 while True:
     n = (int(input('Digite um valor: ')))

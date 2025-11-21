@@ -9,13 +9,13 @@ lista = []
 cont = pos = 0
 
 for cont in range(0, 5):
-    pos = 0
     numero = (int(input('Digite um valor: ')))
 
     if cont == 0:
-        lista.insert(0, numero)
+        lista.append(numero)
         print(f'Primeiro valor adicionado na lista...')
     else:
+        pos = 0
         while True:
             if pos == len(lista):
                 lista.append(numero)
