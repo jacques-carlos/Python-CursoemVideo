@@ -19,8 +19,7 @@ while True:
 print(f'{len(lista)} números foram digitados')
 lista.sort(reverse = True)
 print(f'A lista desses números em ordem decrescente é: {lista}')
-x = lista.count(5)
-if x == 0:
-    print('O valor 5 não foi digitado, portanto não está na lista')
-else:
+if 5 in lista:
     print('O valor 5 foi digitado, portanto está na lista')
+else:
+    print('O valor 5 não foi digitado, portanto não está na lista')
