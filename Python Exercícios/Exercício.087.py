@@ -7,7 +7,6 @@
     C) O maior valor da segunda linha.
 
 """
-
 matriz = [[], [], []]
 
 matriz[0].append(int(input('Digite um valor para a posição [0, 0]: ')))
