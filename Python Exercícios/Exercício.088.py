@@ -20,7 +20,6 @@ for etapa in range (0, quantidade):
     jogo.sort()
     jogos.append(jogo[:])
     jogo.clear()
-
 for x in range(0, quantidade):
     print(f'Jogo {x+1}: {jogos[x]}')
     sleep(1)
