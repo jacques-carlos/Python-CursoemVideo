@@ -47,4 +47,3 @@ while True:
     print('='*60)
     print('Finalizando...'.upper())
     break
-    
