@@ -9,10 +9,10 @@ pessoa = {}
 pessoa['nome'] = str(input('Nome: '))
 an = int(input('Ano de nascimento: ')) # an:ano de nascimento
 pessoa['idade'] = date.today().year - an
-pessoa['ctps'] = int(input('Carteira de trabalho: '))
+pessoa['ctps'] = int(input('Carteira de trabalho (0 não tem): '))
 if pessoa['ctps'] != 0:
     pessoa['contratação'] = int(input('Ano de contratação: '))
-    pessoa['salário'] = float(input('Salário: '))
+    pessoa['salário'] = float(input('Salário: R$'))
     pessoa['aposentadoria'] = (pessoa['contratação'] + 35) - an
 for k,v in pessoa.items():
     print(f'{k} tem o valor {v}')
