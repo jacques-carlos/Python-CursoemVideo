@@ -23,9 +23,12 @@ while True:
         break
 
 print('='*60)
-print(f'{'cod.':<5}{'nome':<10}{'gols':<15}{'total':>5}')
+print(f'{'cod.':<5}{'nome':<20}{'gols':<15}{'total':>5}')
 for c, j in enumerate(lista):
-    print(f'{c:<5}{j['nome']:<10}{j['gols']}{j['total']:>5}')
+    print(f'{c:<5}', end='')
+    for info in j.values():
+        print(f'{str(info):<20}', end = '')
+    print('')
 print('='*60)
 
 while True:
@@ -33,15 +36,13 @@ while True:
     if x == 999:
         print('Encerrando o programa...')
         break
-    else:
-        while x not in range (0, len(lista)):
+    if x not in range (0, len(lista)):
             print('Erro! Tente novamente.')
-            x = int(input('Mostrar dados de qual jogador? '))
-        
+    else:    
         print(f'O jogador {lista[x]['nome']} jogou {len(lista[x]['gols'])} partidas.')
         for c, p in enumerate(lista[x]['gols']):
-            print(f' => Na partida {c}, fez {p} gols.')
+            print(f'        => Na partida {c}, fez {p} gols.')
         print(f'Foi um total de {lista[x]['total']} gols.')
         print('='*60)
 print('='*60)
-    
+print('<< VOLTE SEMPRE >>')

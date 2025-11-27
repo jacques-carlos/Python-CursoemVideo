@@ -23,8 +23,7 @@ while True:
     pessoa.clear()
     resposta = str(input('Deseja continuar? [S/N]: ')).strip()[0]
     while resposta not in 'SsNn':
-        resposta = str(
-            input('Tente novamente. Deseja continuar? [S/N]: ')).strip()[0]
+        resposta = str(input('Tente novamente. Deseja continuar? [S/N]: ')).strip()[0]
     if resposta in 'Nn':
         break
 quantidade = len(dados)
