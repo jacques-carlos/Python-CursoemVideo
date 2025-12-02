@@ -10,10 +10,10 @@
             ===========
 """
 def escreva(texto):
-    tamanho = len(texto)
-    print('=' * tamanho)
-    print(texto)
-    print('=' * tamanho)
+    tamanho = len(texto) + 4
+    print('~' * tamanho)
+    print(f'{texto:^{tamanho}}')
+    print('~' * tamanho)
 
 escreva('Testando... 1... 2... 3...')
 escreva('Olá, Mundo!')

@@ -8,6 +8,7 @@
     b) De 10 até 0, de 2 em 2.
     c) Uma contagem personalizada.
 """
+from time import sleep
 def contador(início, fim, passo):
     # definindo contagem como crescente/decrescente
     if início < fim:
@@ -37,18 +38,21 @@ def contador(início, fim, passo):
             módulo = -passo
             print(f'Contagem de {início} até {fim} de {módulo} em {módulo}:')
         # crescente
-        if início < fim :
+        if contagem == 'crescente' :
             for c in range(início, fim+1, passo):
-                print(c, end = ' ')
+                print(c, end = ' ', flush=True)
+                sleep(0.5)
         # decrescente
-        elif início > fim:
+        elif contagem == 'decrescente':
             if passo > 0:
                 passo = -passo
                 for c in range(início, fim-1, passo):
-                    print(c, end = ' ')
+                    print(c, end = ' ', flush=True)
+                    sleep(0.5)
             elif passo < 0:
                 for c in range(início, fim-1, passo):
-                    print(c, end = ' ')
+                    print(c, end = ' ', flush=True)
+                    sleep(0.5)
         print('FIM!')
         print('='*100)
 
