@@ -9,19 +9,48 @@
     c) Uma contagem personalizada.
 """
 def contador(início, fim, passo):
-    print('='*100)
-    print(f'Contagem de {início} até {fim} de {passo} em {passo}:')
-    cont = início
-    if cont < fim :
-        while cont < fim: 
-            print(cont, end=' ')
-            cont += passo
-    elif cont > fim:
-        while cont > fim:
-            print(cont, end = ' ')
-            cont -= passo
-    print('FIM!')
-    print('='*100)
+    # definindo contagem como crescente/decrescente
+    if início < fim:
+        contagem = 'crescente'
+    elif início > fim:
+        contagem = 'decrescente'
+    else:
+        contagem = 'erro'
+    # caso o passo seja definido como zero
+    if passo == 0:
+        if contagem == 'crescente':
+            passo = 1
+        elif contagem == 'decrescente':
+            passo = -1
+    # contagem crescente não pode ter passo negativo, o contrário pode
+    if passo < 1 and contagem == 'crescente':
+        contagem = 'erro'
+    # PRINTANDO CONTAGEM
+    if contagem == 'erro':
+        print('ERRO!')
+    else:               
+        # título
+        print('='*100)
+        if passo > 0:
+            print(f'Contagem de {início} até {fim} de {passo} em {passo}:')
+        if passo < 0:
+            módulo = -passo
+            print(f'Contagem de {início} até {fim} de {módulo} em {módulo}:')
+        # crescente
+        if início < fim :
+            for c in range(início, fim+1, passo):
+                print(c, end = ' ')
+        # decrescente
+        elif início > fim:
+            if passo > 0:
+                passo = -passo
+                for c in range(início, fim-1, passo):
+                    print(c, end = ' ')
+            elif passo < 0:
+                for c in range(início, fim-1, passo):
+                    print(c, end = ' ')
+        print('FIM!')
+        print('='*100)
 
 contador(1, 10, 1)
 contador(10, 0, 2)
