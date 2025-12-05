@@ -6,21 +6,20 @@
 """
 from time import sleep
 def maior(*números):
-    tamanho = cont = m = 0
+    cont = m = 0
     print('=' * 100)
     print('Analisando os valores passados...')
     sleep(1)
     for valor in números:
         print(valor, end= ' ', flush=True)
         sleep(0.5)
-        tamanho += 1
         cont += 1
         if cont == 1:
             m = valor
         else:
             if valor > m:
                 m = valor
-    print(f'Foram informados {tamanho} valores ao todo.')
+    print(f'Foram informados {cont} valores ao todo.')
     sleep(1)
     print(f'O maior valor informado foi {m}.')
     sleep(2)
