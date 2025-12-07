@@ -1,6 +1,17 @@
 """
 [Exercício 101]
-    Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar().
-
-    A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre todos os valores PARES sorteados pela função anterior.
+    Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento de uma pessoa,
+retornando um valor literal indicando se uma pessoa tem voto negado, opcional ou obrigatório nas eleições.
 """
+from datetime import date
+def voto(idade):
+    if idade < 16:
+        acesso = 'NEGADO'
+    elif 16 <= idade < 18 or idade > 65:
+        acesso = 'OPCIONAL'
+    else:
+        acesso = 'OBRIGATÓRIO'
+    return(acesso)
+ano = int(input('Ano de nascimento: '))
+idade = date.today().year - ano
+print(f'Com {idade} anos: VOTO {voto(ano)}')
