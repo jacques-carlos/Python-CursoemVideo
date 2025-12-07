@@ -5,10 +5,9 @@
 """
 def ficha(nome = '<desconhecido>', gols = 0):
     print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
-#Principal
+# Programa principal
 nome = str(input('Nome do jogador: '))
 gols = str(input('Quantos gols: '))
-
 if nome == '' and gols == '':
     ficha()
 elif nome == '':
