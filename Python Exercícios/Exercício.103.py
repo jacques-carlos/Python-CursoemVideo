@@ -8,11 +8,11 @@ def ficha(nome = '<desconhecido>', gols = 0):
 # Programa principal
 nome = str(input('Nome do jogador: '))
 gols = str(input('Quantos gols: '))
-if nome == '' and gols == '':
+if nome.isalpha() == False and gols.isnumeric() == False:
     ficha()
-elif nome == '':
+elif nome.isalpha() == False:
     ficha(gols = gols)
-elif gols == '':
+elif gols.isnumeric() == False:
     ficha(nome = nome)
 else:
     ficha(nome, gols)
