@@ -8,13 +8,11 @@ Ex:
 """
 def leiaInt(text):
     while True: 
-        valor = (input(text))
+        valor = str(input(text))
         if valor.isnumeric() == True:
-            break
+            return valor
         else:
             print('\033[31mERRO! Digite um número inteiro válido.\033[m')
-    return valor
-
 # Programa principal
 n = leiaInt('Digite um número inteiro: ')
 print(f'Você digitou o número {n}.')
