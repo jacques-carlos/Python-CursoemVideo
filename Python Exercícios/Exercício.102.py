@@ -13,23 +13,21 @@ def fatorial(num, show=False):
     :param num: O número a ser calculado.
     :param show: (opcional) Mostrar ou não a conta.
     :return: O valor do Fatorial de um número n.
-
     """
     total = 1
     print('=' * 100)
-    if show == True:
-        for cont in range (num, 0, -1):
+    for cont in range (num, 0, -1):
+        if show == True:    
+            print(cont, end = '')
             if cont > 1:
-                print(cont, end = ' x ')
+                print(' x ', end = '')
             if cont == 1:
-                print(cont, end = ' = ')
-            total *= cont
-        return(total)
-    if show == False:
-        for cont in range (num, 0, -1):
-            total *= cont
-        return(total)
+                print(' = ', end = '')
+        total *= cont
+    return total
 #Principal
 print(fatorial(5, True))
 print(fatorial(4, False))
 print(fatorial(3))
+print('=' * 100)
+help(fatorial)
