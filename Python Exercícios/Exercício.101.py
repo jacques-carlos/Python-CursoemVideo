@@ -5,13 +5,14 @@ retornando um valor literal indicando se uma pessoa tem voto negado, opcional ou
 """
 from datetime import date
 def voto(idade):
+    acesso = ''
     if idade < 16:
         acesso = 'NEGADO'
-    elif 16 <= idade < 18 or idade > 65:
-        acesso = 'OPCIONAL'
-    else:
+    elif idade >= 18 and idade < 65:
         acesso = 'OBRIGATÓRIO'
+    else:
+        acesso = 'OPCIONAL'
     return(acesso)
 ano = int(input('Ano de nascimento: '))
 idade = date.today().year - ano
-print(f'Com {idade} anos: VOTO {voto(ano)}')
+print(f'Com {idade} anos: VOTO {voto(idade)}')

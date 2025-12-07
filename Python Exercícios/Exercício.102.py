@@ -7,7 +7,7 @@ def fatorial(num, show=False):
     """
     Docstring for fatorial
 
-    fatorial(n, show=False)
+    fatorial(num, show=False)
     -> Calcula o fatorial de um número.
     
     :param num: O número a ser calculado.
