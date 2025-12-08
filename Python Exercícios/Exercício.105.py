@@ -13,31 +13,26 @@
 def notas(*num, sit=False):
     """
     Docstring for notas
-    
+
     -> Função para analisar notas e situações de vários alunos.
     :param num: uma ou mais notas dos alunos (aceita várias).
     :param sit: valor opcional, indicando se deve ou não adicionar a 'situação'.
     :return: dicionário com várias informações sobre a situação da turma.
     """
     dados = dict()
-    total = len(num)
-    dados['total'] = total
+    dados['total'] = len(num)
     dados['maior'] = max(num)
     dados['menor'] = min(num)
-    soma = 0
-    for chave, valor in dados.items():
-        soma += valor
-    média = soma / total
-    dados['média'] = média
+    dados['média'] = sum(num) / len(num)
     if sit:
-            if média < 6:
-                situação = 'RUIM'
-            elif média >= 8:
-                situação = 'BOA'
-            else:
-                situação = 'RAZOÁVEL'
-            dados['situação'] = situação
+        if dados['média'] < 6:
+            situação = 'RUIM'
+        elif dados['média'] >= 8:
+            situação = 'BOA'
+        else:
+            situação = 'RAZOÁVEL'
+        dados['situação'] = situação
     return dados
-
-resultado = notas(6, 8, 9, 10, sit=True)
+# Programa principal
+resultado = notas(9, 10, 5.5, 2.5, 8.5, sit=True)
 print(resultado)
