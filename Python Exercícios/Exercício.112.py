@@ -10,6 +10,7 @@ OBS do aluno: valores float representados com vírgula devem ser considerados na
               no entanto,a fim de simplificar e utilizar o padrão (nativo), preferi utilizar o ponto
               já que em todos os demais exercícios utilizei o ponto para exibir números float
 """
-from utilidadesCeV import dado
+from utilidadesCeV import dado, moeda
 
-dado.leiaDinheiro('Digite o valor: R$')
+valor = dado.leiaDinheiro('Digite o valor: R$')
+moeda.resumo(valor, 35, 22)
