@@ -12,3 +12,6 @@ def dobro(valor):
 
 def metade(valor):
     return valor / 2
+
+def moeda(valor):
+    return f'R${valor:0.2f}'
