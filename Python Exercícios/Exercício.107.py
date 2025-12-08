@@ -4,7 +4,7 @@
 
     Faça também um programa que importe esse módulo e use algumas dessas funções.
 """
-import moeda
+from utilidadesCeV import moeda
 
 valor = float(input('Digite o valor: R$'))
 print(f'O dobro de {valor} é {moeda.dobro(valor)}')
