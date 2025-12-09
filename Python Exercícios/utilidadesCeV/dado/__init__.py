@@ -1,14 +1,13 @@
-from utilidadesCeV import moeda
+from utilidadescev import moeda
 
 def leiaDinheiro(text):
-    valor = str(input(text))
-    valor = valor.replace(',', '.')  
-    if valor.isnumeric():
-        valor = float(valor)
-        return valor
-    else:
-        if valor.count('.') == 1:
-            valor = float(valor)
-            return valor
+    while True:
+        valor = str(input(text)).strip().replace(',', '.')  
+        if valor.isnumeric():
+            return float(valor)   
         else:
-            print(f'\033[31mERRO: "{valor}" é um valor inválido!\033[m')
+            if valor.count('.') == 1:
+                valor = float(valor)
+                return valor
+            else:
+                print(f'\033[31mERRO: "{valor}" é um valor inválido!\033[m')

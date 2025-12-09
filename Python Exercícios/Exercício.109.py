@@ -3,7 +3,7 @@
     Modifique as funções que foram criadas no DESAFIO 107 para que elas aceitem um parâmetro a mais,
 informando se o valor retornado por elas vai ser ou não formatado pela função moeda(), desenvolvido no DESAFIO 108.
 """
-from utilidadesCeV import moeda
+from utilidadescev import moeda
 
 valor = float(input('Digite o valor: R$'))
 print(f'O dobro de {moeda.moeda(valor)} é {moeda.dobro(valor, True)}')
