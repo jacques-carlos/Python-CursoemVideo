@@ -10,7 +10,7 @@ def leiaInt(num):
         except KeyboardInterrupt:
             print('\033[31mUsuário preferiu não digitar esse número.\033[m')
             return 0
-        except:    
+        except (ValueError, TypeError):
             print('\033[31mERRO! Digite um número inteiro válido.\033[m')
         else:
             return valor
@@ -23,7 +23,7 @@ def leiaFloat(num):
         except KeyboardInterrupt:
             print('\033[31mUsuário preferiu não digitar esse número.\033[m')
             return 0
-        except:    
+        except (ValueError, TypeError):
             print('\033[31mERRO! Digite um número real válido.\033[m')
         else:
             return valor
