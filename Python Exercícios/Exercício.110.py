@@ -5,4 +5,4 @@
 from utilidadesCeV import moeda
 
 valor = float(input('Digite o valor: R$'))
-moeda.resumo(valor, 80, 35)
+moeda.resumo(valor, 20, 12)
