@@ -17,7 +17,13 @@ while True:
     if option == 1:
         lerArquivo(arquivo)
     elif option == 2:
-        adicionarNome(arquivo)
+        título('Cadastrar nova pessoa')
+        print(linha('~', 50))
+        nome = leiaStr('Nome: ')
+        idade = leiaInt('Idade: ')
+        print(linha('~', 50))
+        cadastrar(arquivo, nome, idade)
+
     elif option == 3:
         título('Saindo do Sistema...')
         break

@@ -25,28 +25,30 @@ def lerArquivo(nome):
     try:
         arquivo = open(nome, 'rt')
     except:
-        return 'ERRO ao ler o arquivo'
+        print('ERRO ao ler o arquivo')
     else:
         título('Pessoas cadastradas')
         print(linha('~', 50))
-        print(arquivo.read())
+        for l in arquivo:
+            dados = l.split(';')
+            dados[1] = dados[1].replace('\n','') 
+            print(f'{dados[0]:<40}{dados[1]:<3}anos')
         print(linha('~', 50))
+    finally:
         arquivo.close
 
 
-def adicionarNome(nome):
+def cadastrar(arq, nome, idade):
     try:
-        arquivo = open(nome, 'wt')
-        arquivo.close
+        arquivo = open(arq, 'at')
     except:
-        return 'Houve um ERRO ao tentar adicionar os dados no Arquivo!'
+        print('Houve um ERRO na abertura do Arquivo!')
     else:
-        título('Cadastrar nova pessoa')
-        print(linha('~', 50))
-        pessoa = leiaStr('Nome: ')
-        idade = leiaInt('Idade: ')
-        print(linha('~', 50))
-        arquivo.write(pessoa, idade)
+        try:
+            arquivo.write(f'{nome};{idade}\n')
+        except:
+            print('Houve um ERRO ao cadastrar os dados no Arquivo')
+        else:
+            print('Dados adicionados com sucesso!')
+    finally:
         arquivo.close
-        return 'Dados adicionados com sucesso!'
-        
