@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 10 parte B
+AULA 10 parte B - operadores relacionais
 **************************************************
 
         CONDIÇÕES - NOMES
@@ -12,7 +12,7 @@ AULA 10 parte B
         <=      menor ou igual
 """
 
-nome=str(input('qual é o seu nome? ')).title()
+nome = str(input('qual é o seu nome? ')).title()
 
 if nome == 'Gustavo':
     print('Que nome feio você tem!')

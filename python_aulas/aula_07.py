@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 7
+AULA 7 - tipos primitivos; operadores matemáticos
 **************************************************
 
             (input)                     recebe dados do usuário
@@ -26,7 +26,7 @@ print(f'sua divisão inteira é {i}', end=' ')
 print(f'e sua exponenciação é {e}')
 
 """
-    f           .format (permite encaixar variáveis dentro das strings)
+    f           f-strings (permite encaixar variáveis dentro das strings)
     /n          quebra de linha    
     :.2f        especificar casas decimais (nesse caso, duas)
     end=' '     junção de linha (nesse caso, adiciona um espaço em branco

@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 8 parte B
+AULA 8 parte B - biblioteca random
 **************************************************
 
     random                                                                      módulo para operações randômicas
@@ -14,4 +14,4 @@ import random
 numero = random.randint(1, 10)
 print(numero)
 
-print(random.randint(1,10)) #outra forma de fazer
+print(random.randint(1, 10))  # outra forma de fazer

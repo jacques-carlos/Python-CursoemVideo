@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 19
+AULA 19 - dicionários
 **************************************************
         DICIONÁRIO
         variáveis compostas mutáveis
@@ -10,14 +10,14 @@ AULA 19
 dicionario = dict()
 
 print('='*100)
-dados = {'nome':'Pedro', 'idade': 25}
+dados = {'nome': 'Pedro', 'idade': 25}
 print(dados['nome'])
 dados['sexo'] = 'M'
 del dados['idade']
 print(dados)
 
 print('='*100)
-filme = { 
+filme = {
     'Título': 'Star Wars',
     'Ano': 1977,
     'Diretor': 'George Lucas'
@@ -25,7 +25,7 @@ filme = {
 print(filme.values())
 print(filme.keys())
 print(filme.items())
-for k,v in filme.items():
+for k, v in filme.items():
     print(f'O {k} é {v}')
 
 print('='*100)
@@ -37,11 +37,11 @@ print(f'O {pessoas['nome']} tem {pessoas['idade']} anos.')
 print('='*100)
 estado = dict()
 brasil = list()
-for c in range (0,3):
+for c in range(0, 3):
     estado['nome'] = str(input('Digite o Estado: '))
     estado['sigla'] = str(input('Digite a sigla: '))
     brasil.append(estado.copy())
 for est in brasil:
     print('')
-    for k, v in est.items():        
+    for k, v in est.items():
         print(f'O campo {k} tem valor {v}.')

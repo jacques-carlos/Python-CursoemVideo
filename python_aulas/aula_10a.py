@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 10 parte A
+AULA 10 parte A - if + else
 **************************************************
 
         CONDIÇÕES - CARROS
@@ -10,7 +10,7 @@ AULA 10 parte A
 
 tempo = int(input('informe quantos anos tem o seu carro: '))
 
-if tempo<=3:
+if tempo <= 3:
     print('seu carro está novo, mas não por muito tempo :)')
 
 else:

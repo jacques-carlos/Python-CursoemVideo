@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 14
+AULA 14 - while
 **************************************************
 
         ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO
@@ -36,4 +36,5 @@ while y != 0:
             par += 1
         else:
             impar += 1
-print(f'Você digitou {par} números pares e {impar} números ímpares. Totalizando {par + impar} números.')
+print(
+    f'Você digitou {par} números pares e {impar} números ímpares. Totalizando {par + impar} números.')

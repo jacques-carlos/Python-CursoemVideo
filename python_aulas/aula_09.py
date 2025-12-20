@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 9
+AULA 9 - strings
 **************************************************
 
              CADEIA DE STRINGS:
@@ -31,47 +31,47 @@ exemplo = '  Olá Planeta '
 print('-'*20)
 print('ANÁLISE:')
 
-#len
+# len
 print(len(exemplo))
-#comprimento em caracteres da string
+# comprimento em caracteres da string
 
-#count
+# count
 print(exemplo.count('a'))
-#conta a quantidade de caracteres na string (do caractere especificado)
+# conta a quantidade de caracteres na string (do caractere especificado)
 
-#find
-print(exemplo.find('l',0,9))
-#mostra a(s) localização(s) do(s) caractere(s) especificado(s)
+# find
+print(exemplo.find('l', 0, 9))
+# mostra a(s) localização(s) do(s) caractere(s) especificado(s)
 
-#in
+# in
 print('Planeta' in exemplo)
-#verifica se dentro da string existe o que foi pedido
+# verifica se dentro da string existe o que foi pedido
 
-#replace
+# replace
 print(exemplo.replace('Planeta', 'Mundo'))
-#troca strings
+# troca strings
 
-#upper()
+# upper()
 print(exemplo.upper())
-#maiúsculas
+# maiúsculas
 
-#lower()
+# lower()
 print(exemplo.lower())
-#minúsculas
+# minúsculas
 
-#capitalize
+# capitalize
 print(exemplo.capitalize())
-#apenas o primeiro caractere em maiúsculo
+# apenas o primeiro caractere em maiúsculo
 
-#title
+# title
 print(exemplo.title())
-#o primeiro caractere de cada palavra será maiúsculo
+# o primeiro caractere de cada palavra será maiúsculo
 
-#strip
-print(exemplo.strip())  #ambas
-print(exemplo.rstrip()) #direita
-print(exemplo.lstrip()) #esquerda
-#limpa os espaços excedentes
+# strip
+print(exemplo.strip())  # ambas
+print(exemplo.rstrip())  # direita
+print(exemplo.lstrip())  # esquerda
+# limpa os espaços excedentes
 
 
 # [DIVISÃO]
@@ -81,10 +81,10 @@ string = 'Olá Sistema Solar'
 print('-'*20)
 print('DIVISÃO:')
 
-#split()
+# split()
 print(string.split())
-#separa palavras
+# separa palavras
 
-#join
+# join
 print('-'.join(string))
-#juntar palavras com o caractere determinado (nesse caso, "-")
+# juntar palavras com o caractere determinado (nesse caso, "-")

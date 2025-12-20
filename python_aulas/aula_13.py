@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 13
+AULA 13 - for
 **************************************************
 
         ESTRUTURA DE REPETIÇÃO COM VARIÁVEL DE CONTROLE
@@ -12,27 +12,27 @@ AULA 13
 
 """
 
-for x in range(0,5):
+for x in range(0, 5):
     print('OI!')
 print('TCHAU!')
 
-for x in range(0,6):
+for x in range(0, 6):
     print(x)
 print('FIM!')
 
-for x in range(5,-1,-1):
+for x in range(5, -1, -1):
     print(x)
 print('FIM!')
 
 inicio = int(input('Digite o número INICIAL: '))
 fim = int(input('Digite o número FINAL: '))
 passo = int(input('Digite o PASSO: '))
-for z in range(inicio, fim+1 , passo):
+for z in range(inicio, fim+1, passo):
     print(z)
 print('FIM!')
 
 s = 0
-for y in range (0,4):
+for y in range(0, 4):
     n = int(input('Digite um valor: '))
     s += n
 print(f'Seu valor total é: {s}')

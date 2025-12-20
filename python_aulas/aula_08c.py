@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 8 parte C
+AULA 8 parte C - biblioteca emoji
 **************************************************
 
         emoji                           módulo para emojis
@@ -12,4 +12,5 @@ import emoji
 
 print(emoji.emojize('Olá, Mundo! :globe_showing_Americas:'))
 
-print(emoji.emojize('Olá, Mundo! :globe_showing_Americas:', language='alias')) #outra forma de fazer
+print(emoji.emojize('Olá, Mundo! :globe_showing_Americas:',
+      language='alias'))  # outra forma de fazer

@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 17
+AULA 17 - listas
 **************************************************
 
         LISTAS
@@ -25,8 +25,8 @@ print(f'CRIAÇÃO: {num}')
 # ADIÇÃO
 num.append(4)
 num.append(5)
-num.insert(3, 8) # índice, elemento
-num.insert(1, 7) # índice, elemento
+num.insert(3, 8)  # índice, elemento
+num.insert(1, 7)  # índice, elemento
 
 print(f'ADIÇÃO: {num}')
 
@@ -36,7 +36,7 @@ num[2] = 5
 num[7] = 9
 
 print(f'ALTERAÇÃO: {num}')
-             
+
 
 # ORDENAMENTO
 num.sort()
@@ -51,10 +51,10 @@ print(f'Essa lista tem {len(num)} elementos')
 
 
 # REMOÇÃO
-del num[0] # índice
-num.pop(1) # índice
-num.pop 
-num.remove(5) # elemento | remove apenas o primeiro elemento
+del num[0]  # índice
+num.pop(1)  # índice
+num.pop
+num.remove(5)  # elemento | remove apenas o primeiro elemento
 
 print(f'REMOÇÃO: {num}')
 
@@ -73,7 +73,7 @@ for p, v in enumerate(valores):
 print('Cheguei ao final da lista.')
 
 # INPUT
-for c in range (0,3):
+for c in range(0, 3):
     valores.append(int(input('Digite um valor: ')))
 print(f'LISTA FINAL: {valores}')
 

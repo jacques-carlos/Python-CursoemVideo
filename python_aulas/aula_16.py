@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 16
+AULA 16 - tuplas
 **************************************************
 
         TUPLAS
@@ -20,19 +20,19 @@ for comida in lanche:
     print(comida)
 
 print('MANEIRA 2')
-for c in range (0, len(lanche)):
+for c in range(0, len(lanche)):
     print(lanche[c])
 
 print('MANEIRA 3')
 for pos, comida in enumerate(lanche):
-  print(f'{pos}: {comida}')
+    print(f'{pos}: {comida}')
 
 
 bebida = ('Suco', 'Água', 'Sorvete', 'Refrigerante', 'Café')
 
 
-tudo = bebida + lanche # ou tudo = lanche + medida
+tudo = bebida + lanche  # ou tudo = lanche + medida
 print(tudo)
-print (tudo.count('Sorvete'))
+print(tudo.count('Sorvete'))
 print(tudo.index('Sorvete'))
 print(tudo.index('Sorvete', 5))

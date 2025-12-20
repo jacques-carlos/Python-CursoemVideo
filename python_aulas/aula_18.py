@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 18
+AULA 18 - listas
 **************************************************
         LISTAS
         Parte 2
@@ -23,7 +23,7 @@ pessoas.append(dadosP[:])
 pessoas.append(dadosM[:])
 pessoas.append(dadosJ[:])
 
-#ou
+# ou
 
 galera = [['Pedro', 25], ['Maria', 19], ['João', 32], ['Ana', 45]]
 
@@ -38,7 +38,7 @@ pessoal = list()
 
 maiores = menores = 0
 
-for c in range(0,3):
+for c in range(0, 3):
     pessoal.append(str(input('Digite o nome: ')))
     pessoal.append(int(input('Digite a idade: ')))
     dados.append(pessoal[:])

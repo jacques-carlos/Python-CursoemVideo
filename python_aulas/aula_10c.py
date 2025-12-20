@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 10 parte C
+AULA 10 parte C - if + else
 **************************************************
 
         CONDIÇÕES - NOTAS
@@ -13,11 +13,11 @@ print('*'*50)
 
 nota1 = float(input('digite sua primeira nota: '))
 nota2 = float(input('digite sua segunda nota: '))
-media = (nota1 + nota2) /2
+media = (nota1 + nota2) / 2
 
 print(f'sua média é {media:.1f}')
 
-if media<6:
+if media < 6:
     print('reprovado! que pena, estude mais!')
 else:
     print('aprovado! não fez mais que a obrigação!')

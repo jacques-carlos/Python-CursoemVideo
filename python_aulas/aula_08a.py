@@ -1,6 +1,6 @@
 """
 **************************************************
-AULA 8 parte A
+AULA 8 parte A - biblioteca math; módulo sqrt
 **************************************************
 
         ctrl + espaço                                       exibir opções
